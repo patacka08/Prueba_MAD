@@ -41,7 +41,7 @@ if uploaded_files:
         # Unir todos los DataFrames
         final_df = pd.concat(dfs, ignore_index=True)
 
-        # Asignar Numero_ID único según numero_documento
+       # Asignar Numero_ID único según numero_documento
         final_df['Numero_ID'] = pd.factorize(final_df['numero_documento'])[0] + 1
 
         # Reordenar columnas
